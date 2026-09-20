@@ -1,3 +1,4 @@
-javac Main.java
-jar cvfm App.jar manifest.txt Main.class
-java -jar App.jar
+rm -f bin/com/tui/*
+javac -d bin com/tui/Main.java
+jar --create --file=App.jar --main-class=com.tui.Main -C bin .
+java -jar ./App.jar
