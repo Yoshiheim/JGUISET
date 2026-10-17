@@ -1,4 +1,4 @@
-package com.gui;
+package com.gui.UI;
 
 import java.io.IOException;
 
@@ -47,7 +47,7 @@ public class ButtonBox {
                             break;
                         case "rep":
                             new ButtonBox(frame, new Point(new Random().nextInt(10), new Random().nextInt(10)),
-                                    new ArrayList<>(List.of("idk")));
+                                    new ArrayList<>(List.of("firefox")));
                             frame.repaint();
                             break;
                         default:
