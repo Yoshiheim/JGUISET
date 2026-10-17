@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Timer;
 
 public class Printer {
-    private ArrayList<String> Germs = new ArrayList<>(); 
+    //private ArrayList<String> Germs = new ArrayList<>(); 
 
 
     private ArrayList<ArrayList<String>> sprites = new ArrayList<>(List.of(
