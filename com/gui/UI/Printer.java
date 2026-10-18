@@ -3,6 +3,8 @@ package com.gui.UI;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+import com.gui.strings.RevertString;
+
 import java.util.TimerTask;
 import java.awt.Point;
 import java.util.ArrayList;
@@ -26,8 +28,11 @@ public class Printer {
         TimerTask task = new TimerTask(){
             public int i = 0;
             public void run(){
+                int j = 0;
                 for(JLabel l : t2g.labels){
-                    l.setLocation(new Point(10, i*10));
+                    l.setLocation(new Point(10, (j*i*10)));
+                    l.setText(RevertString.Revert(l.getText(), j));
+                    j++;
                 }
                 i++;
                 frame.repaint();

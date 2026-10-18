@@ -4,7 +4,10 @@ import java.io.IOException;
 
 import javax.swing.*;
 
+import com.gui.style.*;
+
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.util.*;
@@ -58,7 +61,8 @@ public class ButtonBox {
                             }
                     }
                 });
-                but.setVisible(false);
+                Style2Button.set(but);
+
                 buttons.add(but);
                 frame.add(but);
                 System.out.println(j);
@@ -78,6 +82,7 @@ public class ButtonBox {
                     }
                 }
             });
+            b.setFont(new Font("Arial", Font.PLAIN, 7)); 
             frame.add(b);
         }
     }
