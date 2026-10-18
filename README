@@ -1,1 +1,5 @@
 The gui application in java with random suiff for fun :3
+
+Also you must set in build.sh your jdk version,
+its must be jdk 25, otherwise its throw error about incompatibility,
+for example use "./build.sh 25" and its should build and run.
